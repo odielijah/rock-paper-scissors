@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: linear-gradient(to bottom, #adadad, #e2e2e2);
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  font-family: Arial, sans-serif; /* optional */
+  font-family: Verdana;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title-and-moves {
+  margin-bottom: 5rem;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* even vertical spacing */
+  align-items: center; /* centers horizontally */
+  padding: 2rem 3rem;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* prevents stretching too wide */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.scores-and-buttons {
+  margin-top: 5rem;
+}
+
+.move-button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.move-img,
+.move-size {
+  height: 50px;
+  margin: 15px;
+}
+
+.result {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.adjust-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auto-play-button,
+.reset-score-button,
+.yes-button,
+.no-button {
+  outline: none;
+  margin: 5px;
+  margin-top: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+  background: black;
+  color: white;
+  padding: 8px 14px;
+  font-family: Verdana;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 1.5rem 1rem;
+    max-width: 90%;
+  }
+
+  .title-and-moves {
+    margin-bottom: 3rem;
+  }
+
+  .move-img,
+  .move-size {
+    height: 45px;
+    margin: 10px;
+  }
+  .auto-play-button,
+  .reset-score-button,
+  .yes-button,
+  .no-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .scores {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  *{
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+
+  .hero-section {
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .auto-play-button,
+  .reset-score-button {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 0.85rem;
+  }
+
+  .scores-and-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.result-and-moves {
+  margin-top: 3rem;
+}
+  .result,
+  .moves {
+    font-size: 0.9rem;
+  }
+}
